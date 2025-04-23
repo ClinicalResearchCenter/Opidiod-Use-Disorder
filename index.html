@@ -8,26 +8,42 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f7fafc;
+      background-color: #f0f4f8;
       margin: 0;
       padding: 0;
       color: #1a202c;
     }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec7e2f4f13d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem;
       background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 12px;
-      margin-top: 3rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      margin-top: -80px;
+      position: relative;
+      z-index: 2;
     }
-    h1 {
-      font-size: 2rem;
+    h2 {
+      font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      color: #2b6cb0;
     }
-    p {
+    p, li {
       font-size: 1rem;
       margin-bottom: 1rem;
     }
@@ -55,31 +71,47 @@
     .cta a:hover {
       background-color: #2c5282;
     }
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.875rem;
+      color: #718096;
+    }
   </style>
 </head>
 <body>
+  <div class="hero">
+    <h1>Join a Paid Clinical Trial for Opioid Recovery</h1>
+  </div>
+
   <div class="container">
-    <h1>Paid Clinical Trial for Opioid Use Disorder (OUD)</h1>
+    <h2>Are You Tapering Off Suboxone?</h2>
     <p>
-      Are you tapering off <strong>Suboxone (buprenorphine)</strong> or just completed a medically supervised withdrawal?
-      You may qualify for a <span class="highlight">paid research study</span> testing a new, non-opioid treatment option.
+      If you’re currently tapering off or recently completed a medically supervised withdrawal from <strong>Suboxone (buprenorphine)</strong>, you may be eligible to participate in a <span class="highlight">paid clinical trial</span> testing a new non-opioid treatment for opioid use disorder.
     </p>
-    <p><strong>Participants Receive:</strong></p>
+
+    <h2>What You Receive</h2>
     <ul>
-      <li>Free care and medication during the study</li>
+      <li>Free care and investigational medication</li>
       <li>Compensation for time and travel</li>
-      <li>Weekly check-ins and clinical support</li>
+      <li>Weekly clinical support and visits</li>
     </ul>
-    <p><strong>Eligibility Highlights:</strong></p>
+
+    <h2>Who Can Join?</h2>
     <ul>
-      <li>Ages 18–65 with moderate/severe opioid use disorder</li>
-      <li>Currently tapering or recently tapered off buprenorphine (within 3 weeks)</li>
-      <li>Not using injection drugs more than twice per week</li>
-      <li>Willing to attend weekly visits for 3 months</li>
+      <li>Ages 18–65 with moderate or severe opioid use disorder</li>
+      <li>Currently tapering or completed a taper within the last 3 weeks</li>
+      <li>Not using injection drugs more than twice weekly</li>
+      <li>Willing to attend weekly visits for 12 weeks</li>
     </ul>
+
     <div class="cta">
-      <a href="https://yourformlink.com" target="_blank">See If You Qualify</a>
+      <a href="https://forms.gle/UY5TtaoLCnEX1qCL9" target="_blank">See If You Qualify</a>
     </div>
+  </div>
+
+  <div class="footer">
+    Clinical Research Coordinators of Florida | All rights reserved
   </div>
 </body>
 </html>
